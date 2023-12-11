@@ -29,26 +29,30 @@ public static void main(String[] args) {
 	person = sc.nextInt();
 	stu = new Student[person];
 	
+	
+	
 	for(int i=0;i<person;i++) {
-//		stu[i] = new Student();
-//		System.out.println(i+1+"번째 학생의 번호 입력");
-//		stu[i].num = sc.nextInt();
-//		System.out.println(i+1+"번째 학생의 이름 입력");
-//		stu[i].name = sc.next();
-//		System.out.println(i+1+"번째 학생의 점수 입력");
-//		stu[i].grade = sc.nextDouble();
-//		
-		Student s = new Student();
+		stu[i] = new Student();
 		System.out.println(i+1+"번째 학생의 번호 입력");
-		s.num = sc.nextInt();
+		stu[i].num = sc.nextInt();
 		System.out.println(i+1+"번째 학생의 이름 입력");
-		s.name = sc.next();
+		stu[i].name = sc.next();
 		System.out.println(i+1+"번째 학생의 점수 입력");
-		s.grade = sc.nextDouble();
-		System.out.println(s.name + " " + s.num + " " + s.grade);
+		stu[i].grade = sc.nextDouble();
+		System.out.println(stu[i].name + " " + stu[i].num + " " +stu[i].grade);
 		
-		//System.out.println(stu[i].name + " " + stu[i].num + " " +stu[i].grade);
+//		Student s = new Student();
+//		System.out.println(i+1+"번째 학생의 번호 입력");
+//		s.num = sc.nextInt();
+//		System.out.println(i+1+"번째 학생의 이름 입력");
+//		s.name = sc.next();
+//		System.out.println(i+1+"번째 학생의 점수 입력");
+//		s.grade = sc.nextDouble();
+//		System.out.println(s.name + " " + s.num + " " + s.grade);
+//		배열은 아니라서 원하는게 아니다
 	}
+	
+	
 	
 }
 }

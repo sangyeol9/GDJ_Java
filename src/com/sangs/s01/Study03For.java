@@ -14,10 +14,11 @@ public class Study03For {
 		System.out.println("초를 입력하세요");
 		int min =sc.nextInt();
 		boolean check = false;
+		
+		
 		for(int i=0; i<60;i++) {
-			
-			for(int j=0; j<60;j++)
-			{
+			for(int j=0; j<60;j++){
+				
 				if(hour == i && j==min) {
 					check = true;
 					System.out.println(i+"분 "+j+"초 가 되었습니다.");
@@ -27,10 +28,5 @@ public class Study03For {
 			}
 			
 		}
-	
-	
-		
-		
-		
 	}
 }
