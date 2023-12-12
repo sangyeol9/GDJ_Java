@@ -8,4 +8,12 @@ public class Magiction {
 		int hp;
 		int mp ;
 		int status ;
+		
+	public void info() {
+			                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+			System.out.println("name : "+ name);
+			
+		}
+
+		
 }

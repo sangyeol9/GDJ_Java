@@ -10,7 +10,9 @@ public static void main(String[] args) {
 	sang.status = 6;
 	sang.mp = 80;
 	
-	System.out.println(sang.hp);
+	
+	sang.info();
+	
 	
 }
 }

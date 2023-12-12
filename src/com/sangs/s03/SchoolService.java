@@ -40,28 +40,40 @@ public class SchoolService {
 
 	}
 	
-	public void serchStudent(Student [] student,int num) {
+	public Student serchStudent(Student [] student,int num) {
 		
-		System.out.println(num+1+"번째 학생의 정보 ");
-		System.out.println("이름 : "+student[num].name);
-		System.out.println("번호 : "+student[num].num);
-		System.out.println("학점 : "+student[num].grade);
-		
-	}
-	
-	public void hiyo(Student [] student) {
-		for(int i=0; i<student.length ;i++)
-		{
-		Student [] temp = new Student[student.length];
-		temp[i] = student[i];
-		System.out.println(temp[i].grade);
-	}
-
-		for(int i=0;i<student.length;i++) {
-			System.out.println(student[i].grade);
-			
+//		System.out.println(num+1+"번째 학생의 정보 ");
+//		System.out.println("이름 : "+student[num].name);
+//		System.out.println("번호 : "+student[num].num);
+//		System.out.println("학점 : "+student[num].grade);
+//		
+		if(student.length<num) {
+			return null;
 		}
-		
+		else if(num <0) return null;
+		else
+		return student[num];
 	}
 	
+	public Student[] addStudent(Student[] a) {
+		Scanner sc = new Scanner(System.in);
+		int ab = a.length;
+		Student[] temp = new Student[ab+1];
+		
+		for(int i=0;i<ab;i++) {
+			temp[i] = new Student();
+			temp[i] = a[i];
+		}
+		temp[ab] = new Student();
+		System.out.println("추가할 이름을 입력하시오.");
+		temp[ab].name = sc.next();
+
+		System.out.println("추가할 번호를 입력하시오.");
+		temp[ab].num = sc.nextInt();
+
+		System.out.println("추가할 학점을 입력하시오.");
+		temp[ab].grade = sc.nextDouble();
+		
+		return temp;
+	}
 }
